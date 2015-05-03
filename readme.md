@@ -3,7 +3,7 @@ monogamy
 
 Lock a function until a provided `unlock` function is called. If a callback is provided, the callback will assume the roll of the `unlock` function. Supports CommonJS/AMD/VanillaJS.  
   
-The returned wrapped function provides a `locked` property so that you can test if a function is callable.
+The returned wrapped function provides a `locked` property so that you can test if a function is locked.
 
 Install
 -------
@@ -28,10 +28,10 @@ var $ = require('jquery');
 var onClick = lock(function(e, unlock) {
   $.get('/all-digits-of-pi', function(pi) {
     // Oh look, we have the full value of pi.
-    // I'm sure this will be accurate.
+    // I'm sure this will end well.
     alert(pi);
-    // And now onSubmit can be called again
-    unlocked();
+    // And now onClick can be called again
+    unlock();
   });
 });
 
