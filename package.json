@@ -1,0 +1,30 @@
+{
+  "name": "monogamy",
+  "version": "1.0.0",
+  "description": "A simple locking helper that ensures an asyncronous function is only called once until unlocked.",
+  "main": "monogamy.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmaelzer/monogamy"
+  },
+  "keywords": [
+    "lock",
+    "unlock",
+    "debounce",
+    "throttle",
+    "async",
+    "mutex"
+  ],
+  "author": "Mike Maelzer <mmaelzer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmaelzer/monogamy/issues"
+  },
+  "homepage": "https://github.com/mmaelzer/monogamy",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
+}
